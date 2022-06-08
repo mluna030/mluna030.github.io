@@ -26,3 +26,15 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+function addRandomQuote(){
+    // quotes array
+    const quotes =
+      ["PO-TA-TOS! Boil em mash em stick em in a stew!-Samwise Gamgee", "Groovy baby-Ash Williams", "If I can’t scuba then what’s this all been about? What am I working towards!- Creed Bratton"];
+
+      const quote = quotes[Math.floor(Math.random() * quotes.length)];
+
+    // Add to page.
+    const quotesContainer = document.getElementById('quotes-container');
+    quotesContainer.innerText = quote;
+}
