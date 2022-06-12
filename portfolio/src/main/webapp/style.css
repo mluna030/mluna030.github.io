@@ -33,6 +33,11 @@
     max-height: 500px;
     max-width: 500px;
   }
+  #textboxid
+{
+    height:200px;
+    font-size:14pt;
+}
   
   .image-thumbnails img:hover {
     border: thick solid black;

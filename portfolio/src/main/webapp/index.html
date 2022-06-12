@@ -44,9 +44,10 @@
       <p>Click here to see a random quote!</p>
       <button onclick="addRandomQuote()">Quote</button>
       <div id = "quotes-container"></div>
-      <form method="POST">
-          <p>Enter some text here:</p>
-          <textarea name = "text-input">Hello World!</textarea>
+      
+      <form action = "/form-handler" method="POST">
+          <p>Send me your contact info:</p>
+          <textarea name = "text-input">Enter email address here!</textarea>
       </br>
       <input type = "submit" />
     </form>
