@@ -2,18 +2,55 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>About Me:</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-  </head>
+  </head>  
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
+      <h1>Michael Luna's Portfolio</h1>
+      <p>Hello! Welcome to my Portfolio</p>
+      <p>About Me:</p>
+      <p>I am a Current Computer Engineering student studying at California Polytechnic University, Pomona with an emphasis in Software Engineering and machine Learning. I am a proud member of the Foothill Valley IEEE chapter, and have been involved in the Cal Poly Pomona IEEE club since 2020. I am eager to learn and create new things in this world </p>
+      <p>Click <a href="image.html">here</a> to see some of my favorite places as well as photography I have taken!</p>
+
+      <p>Past Experience in:</p>
+      <ol>
+        <li>Instrumentation testing, as well as assembling and troubleshooting dedicated controllers for Reliability Systems</li>
+        <li>Functional Software testing, including GUI automation with pyautoGUI, experienced in working with developers to track backlogged issues and report bugs encountered.</li>
+        <li>IT support technician, communicating with staff in order to provide the necessary support to help resolve technical issues that may arise</li>
+      </ol>
+      <p>Visit my Linkedin <a href="https://www.linkedin.com/in/michael-luna6262/">profile!</a></p>
+      <p>Projects:</p>
+      <ol>
+        <li>Designed and implemented a temperature sensor, that alerts the user when their environment gets too hot and turns on an external fan to cool the environment. Used a TFT screen to display the current temperature, and the alarm duration. Everything was programmed using C onto a PIC18F MCU board.</li>
+        <li>implemented a Traffic Controller, that is set to change the color of the light depending on the time of day. The light will aslso change if there is a request to cross the street and will stop incoming traffic to allow pedestrian to cross.</li>
+    </ol>
+    <p>To learn more about some of the projects I have accomplished visit my github page <a href="https://github.com/mluna030">here!</a></p>
+      <p>Research interest in:</p>
+      <ol>
+        <li>Quantum Architecture, I am hoping to start my journey in designing and learning about quantum computers, to further the advancements in this field.</li>
+        <li> Cryptography, Encryption, I would like to help in designing more secure ways to store and transfer data safely and effectively.</li>
+        <li>Machine Learning, and Artificial Intelligence, There are many new applications that we are finding for AI and Intelligent systems that I would like to help implement in any design that I may work on.</li>
+      </ol>
+      
+      
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+      
       <p>Click here to get a random message:</p>
       <button onclick="addRandomGreeting()">Hello</button>
       <div id="greeting-container"></div>
+
+      <p>Click here to see a random quote!</p>
+      <button onclick="addRandomQuote()">Quote</button>
+      <div id = "quotes-container"></div>
+      
+      <form action = "/form-handler" method="POST">
+          <p>Send me your contact info:</p>
+          <textarea name = "text-input">Enter email address here!</textarea>
+      </br>
+      <input type = "submit" />
+    </form>
     </div>
   </body>
 </html>

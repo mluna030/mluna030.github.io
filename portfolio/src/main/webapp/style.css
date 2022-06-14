@@ -1,9 +1,44 @@
 #content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
-}
+    
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+  }
+  
+  #greeting-container {
+    margin-top: 40px;
+  }
+  
+  h1{
+    font-weight: weightOfFont;
+  }
+  
+  title{
+    font-weight: weightOfFont;
+  }
+  
+  body {
+    background-image: url("https://images.unsplash.com/photo-1654096317770-8fbde5c88d2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+    background-repeat: repeat-y;
+    background-size: 800px;
+    font-size: x-large;
+    background-color: #333f35;
+    color: rgb(245, 240, 240);
 
-#greeting-container {
-  margin-top: 20px;
+    font-weight: weightOfFont;
+   }
+   .image-thumbnails img {
+    margin-right: 200px;
+    margin: 10px;
+    max-height: 500px;
+    max-width: 500px;
+  }
+  #textboxid
+{
+    height:200px;
+    font-size:14pt;
 }
+  
+  .image-thumbnails img:hover {
+    border: thick solid black;
+  }
