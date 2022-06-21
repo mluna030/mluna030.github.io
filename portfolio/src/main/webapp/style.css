@@ -42,3 +42,22 @@
   .image-thumbnails img:hover {
     border: thick solid black;
   }
+
+  aside {
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    position: absolute;
+    right: -10%;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #f58a8a;
+}
+
+aside > p {
+    margin: .5rem;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}

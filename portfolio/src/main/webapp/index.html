@@ -6,6 +6,35 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>  
+  <aside id="sidebar">
+    <section class="box newsletter-signup">
+        <div class="separator-heading">
+            <span>
+                <i class="icon icon-envelope white">
+                  <svg class="icon-svg" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m20.487 20.487a12 12 0 0 1 -16.974-16.975 12 12 0 0 1 16.974 16.975z"></path>
+                      <g fill="#fff">
+                          <path d="m4.41 15.943 4.316-4.843-4.316-3.237z"></path>
+                          <path d="m9.877 11.987-4.483 5.059h13.139l-4.34-5.227-2.278 1.655z"></path>
+                          <path d="m5.658 6.953 6.257 4.723 6.282-4.723z"></path>
+                          <path d="m19.588 7.84-4.1 3.092 4.1 4.891z"></path>
+                      </g>
+                  </svg>
+                </i>
+                <span class="newsletter-title">Get in contact with me</span>
+            </span>
+
+        </div>
+        <div class="grey-box">
+          <form action = "/form-handler" method="POST">
+              <p>Send me your contact info:</p>
+                  <textarea name = "email-input">Enter email address here!</textarea>
+          </br>
+          <input type = "submit" />
+        </div>
+    </section>
+</aside>
+
   <body>
     <div id="content">
       <h1>Michael Luna's Portfolio</h1>
@@ -33,7 +62,7 @@
         <li> Cryptography, Encryption, I would like to help in designing more secure ways to store and transfer data safely and effectively.</li>
         <li>Machine Learning, and Artificial Intelligence, There are many new applications that we are finding for AI and Intelligent systems that I would like to help implement in any design that I may work on.</li>
       </ol>
-      
+     
       
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       
@@ -44,12 +73,6 @@
       <p>Click here to see a random quote!</p>
       <button onclick="addRandomQuote()">Quote</button>
       <div id = "quotes-container"></div>
-      
-      <form action = "/form-handler" method="POST">
-          <p>Send me your contact info:</p>
-          <textarea name = "text-input">Enter email address here!</textarea>
-      </br>
-      <input type = "submit" />
     </form>
     </div>
   </body>
