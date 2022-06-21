@@ -38,3 +38,15 @@ function addRandomQuote(){
     const quotesContainer = document.getElementById('quotes-container');
     quotesContainer.innerText = quote;
 }
+
+// Fetches email from the server and adds them to the DOM
+function loadEmail(){
+    fetch("/email-list").then(response => response.json()).then((emails) =>{
+        const emailListElement = document.getElementById('/email-list');
+        emails.forEach((email) => {
+            emailListElement.appendChild(createemailElement(email));
+        })
+    })
+return emailListElement;    
+}
+
