@@ -5,7 +5,6 @@
 
     **Note servlet has not been triggered yet**
 */
-
 package com.google.sps.servlets;
 
 import java.io.IOException;
@@ -21,16 +20,17 @@ public class ContactEmailHandlerServlet extends HttpServlet {
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
     // Get the value entered in the form.
-    String textValue = request.getParameter("text-input");
-
+    String getEmail = request.getParameter("email-input");
+    
     // Print the value so you can see it in the server logs.
-    System.out.println("You submitted: " + textValue);
+    System.out.println("You submitted: " + getEmail);
 
     // Write the value to the response so the user can see it.
-    response.getWriter().println("You submitted: " + textValue);
+    response.getWriter().println("You submitted: " + getEmail);
 
     
+    
     // Redirects user back to home page
-    response.sendRedirect("https://mluna-sps-summer22.uc.r.appspot.com/");
+    //response.sendRedirect("https://mluna-sps-summer22.uc.r.appspot.com/");
   }
 }
